@@ -291,6 +291,13 @@
             transition: all 0.3s ease;
         }
 
+        .skill-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+
         .skill-item:hover .skill-logo {
             transform: scale(1.1);
         }
@@ -317,11 +324,21 @@
             margin: 0 auto;
             border: 2px solid rgba(255, 255, 255, 0.1);
             transition: all 0.3s ease;
+            overflow: hidden;
+            position: relative;
         }
 
         .profile-img:hover {
             border-color: rgba(255, 255, 255, 0.2);
             transform: scale(1.02);
+        }
+
+        .img-profile {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
         }
 
         /* Projects Section */
@@ -707,63 +724,65 @@
                     <div class="skills">
                         <div class="skill-item">
                             <div class="skill-logo">
-                                <img src="images/python-logo.png" alt="Python" style="width: 100%; height: 100%; object-fit: contain;">
+                                <img src="images/python-logo.png" alt="Python">
                             </div>
                             <div class="skill-name">Python</div>
                         </div>
                         
                         <div class="skill-item">
                             <div class="skill-logo">
-                                <img src="images/r-logo.png" alt="R" style="width: 100%; height: 100%; object-fit: contain;">
+                                <img src="images/r-logo.png" alt="R">
                             </div>
                             <div class="skill-name">R</div>
                         </div>
 
                         <div class="skill-item">
                             <div class="skill-logo">
-                                <img src="images/excel-logo.png" alt="Excel" style="width: 100%; height: 100%; object-fit: contain;">
+                                <img src="images/excel-logo.png" alt="Excel">
                             </div>
                             <div class="skill-name">Excel</div>
                         </div>
                         
                         <div class="skill-item">
                             <div class="skill-logo">
-                                <img src="images/sql-logo.png" alt="SQL" style="width: 100%; height: 100%; object-fit: contain;">
+                                <img src="images/sql-logo.png" alt="SQL">
                             </div>
                             <div class="skill-name">SQL</div>
                         </div>
                         
                         <div class="skill-item">
                             <div class="skill-logo">
-                                <img src="images/spss-logo.png" alt="SPSS" style="width: 100%; height: 100%; object-fit: contain;">
+                                <img src="images/spss-logo.png" alt="SPSS">
                             </div>
                             <div class="skill-name">SPSS</div>
                         </div>
                         
                         <div class="skill-item">
                             <div class="skill-logo">
-                                <img src="images/cdnlogo.com_fastapi.svg" alt="FastAPI" style="width: 100%; height: 100%; object-fit: contain;">
+                                <img src="images/cdnlogo.com_fastapi.svg" alt="FastAPI">
                             </div>
                             <div class="skill-name">FastAPI</div>
                         </div>
                         
                         <div class="skill-item">
                             <div class="skill-logo">
-                                <img src="images/powerbi.png" alt="Power BI" style="width: 100%; height: 100%; object-fit: contain;">
+                                <img src="images/powerbi.png" alt="Power BI">
                             </div>
                             <div class="skill-name">Power BI</div>
                         </div>
                         
                         <div class="skill-item">
                             <div class="skill-logo">
-                                <img src="images/laravel.png" alt="Laravel" style="width: 100%; height: 100%; object-fit: contain;">
+                                <img src="images/laravel.png" alt="Laravel">
                             </div>
                             <div class="skill-name">Laravel</div>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
-                    <div class="profile-img">👨‍💻</div>
+                    <div class="profile-img">
+                        <img src="images/DSC00567.JPG" alt="Profile Photo" class="img-profile">
+                    </div>
                 </div>
             </div>
         </div>
